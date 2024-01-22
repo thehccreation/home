@@ -202,7 +202,7 @@ li{
     width: 40px;
     height: auto;
     position: relative;
-    top: 0px;
+    margin: 20px;
 
 }
 
@@ -514,7 +514,6 @@ li{
     .arrow img{
         margin: 20px;
         width: 30px;
-        top: -70px;
     }
 
    
