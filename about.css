@@ -1,0 +1,169 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{
+    background-color:black;
+    overflow-x: hidden;
+    padding: 15px;
+}
+nav{
+    width: 100%;
+    /* background-color: red; */
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+}
+h1{
+    font-size: 20px;
+    font-family: sans-serif;
+    color: blueviolet;
+}
+span{
+    color: gray;
+}
+ul{
+    display: flex;
+    list-style: none;
+    gap: 5px;
+}
+nav ul li a{
+    text-decoration: none; 
+    color: blueviolet; 
+    font-size: 20px;
+    font-family: sans-serif;
+    padding: 5px 20px;
+    border-radius: 20px;
+    transition: 0.3s;
+}
+
+a:hover{
+    background-color: blueviolet;
+    color: black;
+}
+
+section{
+    width: 100%;
+    min-height: 400px;
+    background-color: blueviolet;
+    border-radius: 20px;
+    padding: 20px;   
+}
+section img{
+    width: 100%;
+}
+section h2{
+    margin: 30px 0px;
+    font-size: 40px;
+    color: white;
+}
+section span{
+    font-style: italic;
+    color: black;
+}
+section ul { 
+    display: block;
+    list-style: disc;
+    margin: 30px 0px;
+    font-weight: bold;
+}
+
+section ul h4{
+    font-size: 30px;
+    margin: 10px 10px;
+    color: white;
+}
+
+section ul li{
+    font-weight: 100;
+    margin: 0px 30px;
+    font-size: 15px;
+}
+
+section p{
+    border-left: 5px solid black;
+    padding-left: 10px; 
+}
+
+footer::before{
+    content: "";
+    width: 70%;
+    height: 2px;
+    background-color: darkgray;
+    border-radius: 20px;
+    margin: 30px;
+    opacity: 0.5;
+}
+
+footer{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer h4{
+    font-size: 20px;
+    font-weight: bold;
+    font-family: sans-serif;
+    color: white;
+}
+
+footer .links{
+    margin: 30px;
+    display: flex;
+    gap: 10px;
+}
+
+footer .links a{
+    text-decoration: none;
+    padding: 5px 20px;
+    color: black;
+    border-radius: 20px;
+    transition: 0.3s;
+}
+
+footer .links a:hover{
+    background-color: black;
+    color: white;
+   
+}
+
+
+
+
+@media screen and (max-width: 600px)
+{
+    nav{
+        padding: 10px;
+    }
+
+    h1{
+        font-size: 15px;
+    }
+
+    nav ul li a{
+        padding: 5px;
+        font-size: 15px;
+    }
+    section h2 {
+        font-size: 20px;
+    }
+    section ul h4{
+        font-size: 17px;
+    }
+    footer{
+        margin: 0px;
+    }
+    footer .links{
+        flex-direction: column;
+        align-items: center;
+    }
+
+}
+
