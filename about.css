@@ -51,7 +51,8 @@ section{
     min-height: 400px;
     background-color: blueviolet;
     border-radius: 20px;
-    padding: 20px;   
+    padding: 20px;  
+    overflow:hidden;
 }
 section img{
     width: 100%;
