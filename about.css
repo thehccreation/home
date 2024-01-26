@@ -80,7 +80,7 @@ section ul h4{
 }
 
 section ul li{
-    font-weight: 100;
+    font-weight: bold;
     margin: 0px 30px;
     font-size: 15px;
 }
