@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="shortcut icon" href="https://ik.imagekit.io/tovuwazhze/hcc-favicon.jpg?updatedAt=1675358555294" type="image/x-icon">
+    <link rel="stylesheet" href="contact.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - THEHCCREATION</title>
+</head>
+<body><nav>
+    <h1>THEHCCREATION <span> / Contact Us</span></h1>
+    <ul>
+        <li><a href="https://thehccreation.github.io/home/">Home</a></li>
+        <li><a href="/">Services</a></li>
+        <li><a href="https://thehccreation.blogspot.com/search/label/blog">Blog</a></li>
+    </ul>
+</nav>
+<section>
+    <form class="formarea" action="https://api.web3forms.com/submit" method="POST">
+        <h2>Get in Touch</h2>
+        <input type="hidden" name="access_key" value="e9626cec-5f5e-4360-9494-64fd56069508">
+        <input type="text" name="name" placeholder="Name" required class="inputbox">
+        <input type="email" name="email" placeholder="E-Mail" required class="inputbox">
+        <textarea name="message" placeholder="Message" required class="msgbox"></textarea>
+        <button type="submit">Submit</button>
+    </form>
+
+    <footer>
+        <h4>Important Links</h4>
+            <div  class="links">
+                <a href="https://thehccreation.github.io/home/about.html">About</a>
+                <a href="https://thehccreation.blogspot.com/p/feedback.html">Feedback</a>
+                <a href="https://thehccreation.blogspot.com/p/contect.html">Social Media</a>
+            </div>
+    </footer>
+</section>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js"></script>
+    
+
+    <script>
+
+        gsap.from("nav> *", 1.4, {
+            opacity: 0,
+            y: -100,
+            ease: "power3.inOut",
+            stagger: 0.2,
+            delay: 0.2,
+        });
+
+
+        gsap.from("section > *", 1.4, {
+            opacity: 0,
+            x: -100,
+            ease: "power3.inOut",
+            stagger: 0.3,
+            delay: 0.4,
+        });
+
+    </script>    
+
+</body>
+</html>
