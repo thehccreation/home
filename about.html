@@ -5,23 +5,39 @@
     <link rel="stylesheet" href="about.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Bungee&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="https://ik.imagekit.io/tovuwazhze/homepage%20assets/hcc-favicon.jpg?updatedAt=1705154642736" type="image/x-icon">
     <title>About - THEHCCREATION</title>
 </head>
 <body>
     <nav>
-        <h1>THEHCCREATION <span> / About</span></h1>
-        <ul>
-            <li><a href="https://thehccreation.github.io/home/">Home</a></li>
-            <li><a href="/">Services</a></li>
-            <li><a href="https://thehccreation.blogspot.com/search/label/blog">Blog</a></li>
+        <input type="checkbox" class="menubtnbox" name="" id="">
+        <img class="logo" src="https://ik.imagekit.io/tovuwazhze/homepage%20assets/hcc-logo-transparent.png?updatedAt=1722260211390" alt="">
+        <h1>THEHCCREATION</h1>
+        <img class="menubtn" width="96" height="96" src="https://img.icons8.com/fluency-systems-filled/96/delete-sign.png" alt="delete-sign"/>
+        <ul class="menubar">
+            <li><a href="https://thehccreation.github.io/home">HOME</a></li>
+            <li><a href="https://thehccreation.github.io/home/Space-Library.html">SPACE LIBRARY</a></li>
+            <li><a href="https://thehccreation.blogspot.com/search/label/blog">BLOG</a></li>
+            <li><a href="https://thehccreation.github.io/home/contact.html">CONTACT US</a></li>
+            <li><a href="#" class="active">ABOUT</a></li>
         </ul>
     </nav>
+    <div class="title">
+        <img class="backpanel" src="https://ik.imagekit.io/tovuwazhze/homepage%20assets/about-img.png?updatedAt=1706271444428">
+    </div>
     <section>
-        <img src="https://ik.imagekit.io/tovuwazhze/homepage%20assets/about-img.png?updatedAt=1706271444428">
-        <h2>THEHCCREATION: Unleash Your Productivity, effortlessly.</h2>
-            <p><span>"All kinds of free & time-saving resources are available on your fingertips." </span>- One Website for all your Needs.</p>
-            <p>Founded in 2016 by Harshvardhan Chauhan, THEHCCREATION is your one-stop shop for all things creative, without the strings attached. We offer a diverse suite of free web apps, accessible instantly without logins, empowering your imagination and bringing your ideas to life - all at your fingertips.</p>
-        <ul>
+        
+        <h3>ABOUT - THEHCCREATION</h3>
+            <p><span>
+                &lt;Namaste World/&gt; <br>
+                I'M Harshvardhan Chauhan; <br>
+                <span id="Typing"></span>
+            </span></p>
+            <p>"All kinds of free & time-saving resources are available on your fingertips." - One Website for all your Needs.</p>
+            <p>Founded in 2016 by Harshvardhan Chauhan, THEHCCREATION is your one-stop platform for all things creative, without the strings attached. We offer a diverse suite of free web apps, accessible instantly without logins, empowering your imagination and bringing your ideas to life - all at your display.</p>
+        <ol>
             <h4>Why Choose THEHCCREATION?</h4>
             <li>Effortless Creativity: Dive straight in, no logins or fuss. Your art, your rules.</li>
             <li>Privacy First: We never collect personal data. Create freely, knowing your privacy is paramount.</li>
@@ -29,41 +45,29 @@
             <li>Time-Saving Resources: Boost your workflow with intuitive tools and unleash your creative potential - faster.</li>
             <li>Endless Possibilities: From visual masterpieces to captivating stories, productivity enhancers, and more, explore a universe of creative tools.</li>
             <li>Thriving Community: Share your creations, collaborate with fellow artists, and discover endless inspiration in our welcoming community.</li>
-        </ul>
-            <p>THEHCCREATION: Where imagination takes flight, effortlessly.</p>
-            <p>All kinds of free & time-saving resources are available on your fingertips. One Website for all your Needs.</p>
-    
-            
-            <footer>
-                <h4>Important Links</h4>
-                <div  class="links">
-                    <a href="https://thehccreation.github.io/home/contact.html">Contact us</a>
-                    <a href="https://thehccreation.blogspot.com/p/feedback.html">Feedback</a>
-                    <a href="https://thehccreation.blogspot.com/p/contect.html">Social Media</a>
-                </div>
-            </footer>        
-        </section>
-
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js"></script>
+        </ol>
+    </section>
+    <div class="quote">
+        <img src="https://ik.imagekit.io/tovuwazhze/homepage%20assets/quote.jpg?updatedAt=1722185625981" alt="">
+    </div>
+    <footer>
+        <div class="flogo"><img src="https://ik.imagekit.io/tovuwazhze/homepage%20assets/hcc-logo-transparent.png?updatedAt=1722260211390" alt="">v 3.2</div>
+        <div class="implink">
+            <a href="https://thehccreation.blogspot.com/p/feedback.html">Feedback</a>
+            <a href="#top"><img width="50" height="50" src="https://img.icons8.com/ios-filled/50/up--v1.png" alt="up--v1"/></a>
+        </div>
+    </footer>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
     <script>
-
-        gsap.from(" nav > *", 1.4, {
-            opacity: 0,
-            y: -100,
-            ease: "power3.inOut",
-            stagger: 0.1,
-            delay: 0.1,
+        var typed = new Typed('#Typing', {
+          strings: ['Web Developer','Graphic Designer','Digital Content Creator'],
+          typeSpeed: 80,
+          backSpeed: 40,
+          loop:true,
         });
-
-        gsap.from(" section > *", 1.4, {
-            opacity: 0,
-            x: -100,
-            ease: "power3.inOut",
-            stagger: 0.3,
-            delay: 0.3,
-        });
+      </script>
+ 
         
-    </script>
+   
 </body>
 </html>
