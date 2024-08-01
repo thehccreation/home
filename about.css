@@ -3,136 +3,222 @@
     padding: 0px;
     scroll-behavior: smooth;
     box-sizing: border-box;
-    font-family: sans-serif;
+    font-family: "Poppins", sans-serif;
+    color: white;
 }
 
-body{
-    background-color:black;
+html,body{
+   background-color: black;
     overflow-x: hidden;
-    padding: 15px;
 }
 nav{
     width: 100%;
-    /* background-color: red; */
+    padding: 20px;
+    background: rgba(174, 0, 255, 0.417) ;
+    top:0;
+    left: 0;
     display: flex;
-    justify-content: space-between;
-    padding: 30px;
+    align-items: center;
+    backdrop-filter: blur(8px);
+    position: absolute;
+    z-index: 1;
+    
 }
-h1{
-    font-size: 20px;
-    font-family: sans-serif;
-    color: blueviolet;
+.logo{
+    filter: invert(1);
+    width: 30px;
+    height: 30px;
 }
-span{
-    color: gray;
+nav h1{
+    color: white;
+    font-size: 24px;
+    padding-left: 10px;
+    font-family: "Poppins", sans-serif;
 }
-ul{
-    display: flex;
+.menubtn{
+    position: absolute;
+    z-index: 20;
+    width: 30px;
+    height: 30px;
+    top: 20px;
+    right: 20px;
+    filter: invert(1);
+    transition: 0.3s;
+    rotate: 45deg;
+    scale: 0.7;
+}
+.menubtnbox{
+    position: absolute;
+    z-index: 21;
+    width: 30px;
+    height: 30px;
+    top: 20px;
+    right: 20px;
+    opacity: 0;
+}
+
+.menubtnbox:checked ~ .menubar{
+    right: 0;
+    visibility: visible;
+}
+.menubtnbox:checked ~ .menubtn{
+    rotate: 0deg;
+    scale: 1.1;
+}
+
+.menubar{
+    visibility: hidden;
+    position: absolute;
+    z-index: 10;
+    background: blueviolet ;
+    backdrop-filter: blur(8px);
     list-style: none;
-    gap: 5px;
+    height: 100vh;
+    top: 0;
+    right: -100%;
+    padding: 100px 60px 30px;
+    width: 30%;
+    transition: 0.3s;
+
 }
 nav ul li a{
-    text-decoration: none; 
-    color: blueviolet; 
-    font-size: 20px;
-    font-family: sans-serif;
-    padding: 5px 20px;
-    border-radius: 20px;
-    transition: 0.3s;
-}
-
-a:hover{
-    background-color: blueviolet;
-    color: black;
-}
-
-section{
-    width: 100%;
-    min-height: 400px;
-    background-color: blueviolet;
-    border-radius: 20px;
-    padding: 20px;  
-    overflow:hidden;
-}
-section img{
-    width: 100%;
-}
-section h2{
-    margin: 30px 0px;
-    font-size: 40px;
+    text-decoration: none;
     color: white;
+    font-family: "Poppins", sans-serif;
+    font-size: 20px;   
+    position: relative;
+    z-index: 22;
+    display: flex;
+    align-items: center;
+    margin: 15px 12px;
 }
-section span{
-    font-style: italic;
-    color: black;
-}
-section ul { 
-    display: block;
-    list-style: disc;
-    margin: 30px 0px;
-    font-weight: bold;
-}
-
-section ul h4{
-    font-size: 30px;
-    margin: 10px 10px;
-    color: white;
-}
-
-section ul li{
-    font-weight:400;
-    margin: 0px 30px;
-    font-size: 15px;
-}
-
-section p{
-    border-left: 5px solid black;
-    padding-left: 10px; 
-}
-
-footer::before{
+nav ul li a::before{
     content: "";
-    width: 70%;
-    height: 2px;
-    background-color: darkgray;
-    border-radius: 20px;
-    margin: 30px;
-    opacity: 0.5;
-}
-
-footer{
+    width: 8px;
+    height: 8px;
+    background-color:white;
+    display: block;
+    position: absolute;
+    z-index: 21;
+    left: 0;
+    margin-left: -15px;
+    transition: 0.2s;
+    border-radius: 10px;
+} 
+nav ul li a:hover::before{
     width: 100%;
-    margin: auto;
+    height: 100%;
+    mix-blend-mode: difference;
+    background-color: #FC4100;
+}
+.active::before{
+    width: 100%;
+    height: 100%;
+    mix-blend-mode: difference;
+    background-color: #FC4100;
+}
+.title{
+    width: 100%;
+    padding: 20px;
+    background: url(https://ik.imagekit.io/tovuwazhze/homepage%20assets/6503253.jpg?updatedAt=1721578832454);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+    padding: 80px 0px 0px;
 }
-
-footer h4{
-    font-size: 20px;
+section{
+    width: 100%;
+    min-height: 400px;
+    background-color:black;
+    padding: 20px;
+    overflow: hidden;   
+}
+.backpanel{
+    width: 100%;
+}
+section h3{
+    /* text-align: center; */
+    margin: 30px 0px 60px;
+    font-size: 50px;
+    color: blueviolet;
+}
+section p{
+    font-size: 30px;
+    /* text-align: center; */
+    margin: 0 50px;
+}
+section p span{
+    margin: 80px 0px;
+    font-size: 35px;
     font-weight: bold;
-    font-family: sans-serif;
-    color: white;
+    color: #FC4100;
 }
-
-footer .links{
-    margin: 30px;
-    display: flex;
+section ol { 
+    display: block;
+    font-weight: bold;
     gap: 10px;
 }
 
-footer .links a{
-    text-decoration: none;
-    padding: 5px 20px;
-    color: black;
-    border-radius: 20px;
-    transition: 0.3s;
+section ol h4{
+    font-size: 40px;
+    margin: 100px 10px 10px;
+    color: blueviolet;
+    /* text-align: center; */
 }
 
-footer .links a:hover{
-    background-color: black;
+section ol li{
+    font-weight: 400;
+    margin: 0px 50px;
+    font-size: 25px;
+}
+.lower{
+    margin: 30px;
+}
+.quote{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding:10px 0 100px;
+}
+.quote img{
+    width: 100%;
+}
+footer{
+    background-color: #191919;
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.flogo, .implink{
+    display: flex;
+    align-items: center;
     color: white;
-   
+    font-size: 15px;
+    font-family: "Poppins", sans-serif;
+}
+.flogo img{
+    filter: invert(1);
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+.implink a{
+    color: white;
+    text-decoration: none;
+}
+.implink a img{
+    width: 30px;
+    height: 30px;
+    filter: invert(1);
+    margin-left: 10px;
 }
 
 
@@ -140,14 +226,6 @@ footer .links a:hover{
 
 @media screen and (max-width: 600px)
 {
-    nav{
-        padding: 10px;
-    }
-
-    h1{
-        font-size: 15px;
-    }
-
     nav ul li a{
         padding: 5px;
         font-size: 15px;
@@ -158,13 +236,44 @@ footer .links a:hover{
     section ul h4{
         font-size: 17px;
     }
-    footer{
-        margin: 0px;
-    }
-    footer .links{
-        flex-direction: column;
-        align-items: center;
-    }
-
 }
 
+@media screen and (max-width:800px) {
+    .menubar{
+        width: 100%;
+        right: 0;
+        /* top: -100%; */
+        opacity: 0%;
+        visibility: hidden;
+    }
+    .menubtnbox:checked ~ .menubar{
+        right: 0;
+        top: 0;
+        visibility: visible;
+        opacity: 100%;
+    }
+    section h3{
+        font-size: 35px;
+    }
+    section p{
+        font-size: 20px;
+    }
+    section p span {
+        font-size: 20px;
+    }
+    section ol h4 {
+        font-size: 35px;
+    }
+    section ol li{
+        font-size: 20px
+    }
+}
+
+@media screen and (max-width:450px){
+    nav h1{
+        font-size: 20px;
+    }
+    section {
+        padding: 10px;
+    }
+}
