@@ -1,0 +1,33 @@
+[
+	{
+		"id": 1,
+		"image": "https://ik.imagekit.io/tovuwazhze/service%20img/hccblog.jpg?updatedAt=1721558422986",
+		"name": "HCC BLOG",
+		"productCode": "https://thehccreation.blogspot.com/search/label/blog"
+	},
+	{
+		"id": 2,
+		"image": "https://ik.imagekit.io/tovuwazhze/service%20img/hcctechnical.jpg?updatedAt=1721558423185",
+		"name": "HCC TECHNICAL",
+		"productCode": "https://www.youtube.com/@thehccreation"
+	},
+	{
+		"id": 3,
+		"image": "https://ik.imagekit.io/tovuwazhze/service%20img/hccpixels.jpg?updatedAt=1721558423309",
+		"name": "HCC PIXELS",
+		"productCode": "https://thehccreation.github.io/hccpixels/"
+	},
+	{
+		"id": 4,
+		"image": "https://ik.imagekit.io/tovuwazhze/service%20img/hccmodarena.jpg?updatedAt=1721558423296",
+		"name": "HCC MOD ARENA",
+		"productCode": "https://hccmodarena.blogspot.com/"
+	},
+	{
+		"id": 5,
+		"image": "https://ik.imagekit.io/tovuwazhze/service%20img/memixfusion.jpg?updatedAt=1721558423283",
+		"name": "MEMIX FUSION",
+		"productCode": "https://thehccreation.github.io/memixfusion/"
+	}
+	
+]
