@@ -1,5 +1,11 @@
 [
 	{
+		"id": 6,
+		"image": "https://ik.imagekit.io/tovuwazhze/service%20img/20240817_140432.jpg?updatedAt=1723883853883",
+		"name": "HCC GPT",
+		"productCode": "https://hccgpt.onrender.com/"
+	},
+	{
 		"id": 1,
 		"image": "https://ik.imagekit.io/tovuwazhze/service%20img/hccblog.jpg?updatedAt=1721558422986",
 		"name": "HCC BLOG",
