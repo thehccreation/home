@@ -1,38 +1,45 @@
-[
+[	
+	
 	{
 		"id": 6,
 		"image": "https://ik.imagekit.io/tovuwazhze/service%20img/20240817_140432.jpg?updatedAt=1723883853883",
 		"name": "HCC GPT",
+		"discription": "Custom AI ChatBot",
 		"productCode": "https://hccgpt.onrender.com/"
 	},
 	{
 		"id": 1,
 		"image": "https://ik.imagekit.io/tovuwazhze/service%20img/hccblog.jpg?updatedAt=1721558422986",
 		"name": "HCC BLOG",
+		"discription":"tech and project updates",
 		"productCode": "https://thehccreation.blogspot.com/search/label/blog"
 	},
 	{
 		"id": 2,
 		"image": "https://ik.imagekit.io/tovuwazhze/service%20img/hcctechnical.jpg?updatedAt=1721558423185",
 		"name": "HCC TECHNICAL",
+		"discription":"youtube channel",
 		"productCode": "https://www.youtube.com/@thehccreation"
 	},
 	{
 		"id": 3,
 		"image": "https://ik.imagekit.io/tovuwazhze/service%20img/hccpixels.jpg?updatedAt=1721558423309",
 		"name": "HCC PIXELS",
+		"discription":"stock images",
 		"productCode": "https://thehccreation.github.io/hccpixels/"
 	},
 	{
 		"id": 4,
 		"image": "https://ik.imagekit.io/tovuwazhze/service%20img/hccmodarena.jpg?updatedAt=1721558423296",
 		"name": "HCC MOD ARENA",
+		"discription":"mod apk and software",
 		"productCode": "https://hccmodarena.blogspot.com/"
 	},
 	{
 		"id": 5,
 		"image": "https://ik.imagekit.io/tovuwazhze/service%20img/memixfusion.jpg?updatedAt=1721558423283",
 		"name": "MEMIX FUSION",
+		"discription":"memes website",
 		"productCode": "https://thehccreation.github.io/memixfusion/"
 	}
 	
