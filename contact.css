@@ -1,68 +1,206 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <link rel="shortcut icon" href="https://ik.imagekit.io/tovuwazhze/hcc-favicon.jpg?updatedAt=1675358555294" type="image/x-icon">
-    <link rel="stylesheet" href="contact.css">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Bungee&display=swap" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css2?family=Bungee&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <link rel="shortcut icon" href="https://ik.imagekit.io/tovuwazhze/homepage%20assets/hcc-favicon.jpg?updatedAt=1705154642736" type="image/x-icon">
-    <title>Contact - THEHCCREATION</title>
-</head>
-<body>
-    <header>
-        <nav class="homenav">
-            <img src="https://ik.imagekit.io/tovuwazhze/homepage%20assets/hcc-logo-transparent.png?updatedAt=1722260211390" alt="HCC - LOGO">
-            <h1>THEHCCREATION</h1>
-            <img width="30" height="30" src="https://img.icons8.com/ios-filled/50/menu--v6.png" onclick="openmenu()"
-                alt="menu--v6" />
-        </nav>
-        <ul id="menulist">
-            <nav>
-                <h1>THEHCCREATION</h1>
-                <img width="40" height="40" src="https://img.icons8.com/ios-filled/50/long-arrow-right.png"
-                    onclick="closemenu()" alt="long-arrow-right" />
-            </nav>
-            <li><a href="https://thehccreation.github.io/home/" id="listitems" onclick="closemenu()">HOME</a></li>
-            <li><a href="https://thehccreation.github.io/home/projects.html" id="listitems" onclick="closemenu()">PROJECTS</a></li>
-            <li><a href="https://thehccreation.blogspot.com/search/label/blog" id="listitems" onclick="closemenu()">BLOG</a></li>
-            <li><a href="https://thehccreation.github.io/home/contact.html" id="listitems" onclick="closemenu()">CONTACT</a></li>
-            <li><a href="https://thehccreation.github.io/home/about.html" id="listitems" onclick="closemenu()">ABOUT</a></li>
-        </ul>
-    </header>
-<section id="top">
-    <h2>CONTACT</h2>
-    <form class="formarea" action="https://api.web3forms.com/submit" method="POST">
-        <input type="hidden" name="access_key" value="e9626cec-5f5e-4360-9494-64fd56069508">
-        <input type="text" name="name" placeholder="Name" required class="inputbox">
-        <input type="email" name="email" placeholder="E-Mail" required class="inputbox">
-        <textarea name="message" placeholder="Message" required class="msgbox"></textarea>
-        <button type="submit">SUBMIT</button>
-    </form>
-</section>
-<footer>THEHCCREATION &copy 2017 - 2024</footer>
-<script>
-    const listitems = document.getElementById('listitems');
-    const menulist = document.getElementById('menulist');
-  
-    function openmenu() {
-        if (menulist.style.width = "0%") {
-            menulist.style.width = "100%";
-        }
-        else {
-            menulist.style.width = "0%";
-        }
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body{
+    background-color:black;
+    overflow-x: hidden;
+}
+header{
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    width: 100%;
+    padding: 10px 0px 0px;
+}
+.homenav{
+    width: 98%;
+}
+header nav{
+    background: white;
+    backdrop-filter: blur(8px);
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 30px;
+    border-radius: 20px;
+    align-items: center;
+    filter: drop-shadow(0px 3px 4px rgb(59, 59, 59));
+    border:1px solid rgb(180, 180, 180);
+}
+header nav img:nth-child(1){
+    width: 30px;
+    scale: 1.2;
+    margin-left: 5px;
+}
+header nav h1{
+    font-family: "Poppins", system-ui;
+    color: black;
+}
+header ul nav{
+    padding: 50px;
+    height: 70px;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    margin-bottom: 50px;
+    border-radius: 0;
+    border: 0;
+    border-bottom: 2px solid black;
+}
+header ul{
+    background-color: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(10px);
+    height: 100vh;
+    width: 0%;
+    position: absolute;
+    top: 0;
+    overflow: hidden;
+    right: 0;
+    transition: 0.2s;
+}
+header ul nav h1{
+    color: white;
+}
+header ul nav img{
+    filter: invert(1);
+}
+header ul li{
+    margin: 10px 10px 10px 80px;
+    list-style: none;
+}
+header ul li a{
+    text-decoration: none;
+    color: white;
+    font-family: "Poppins", system-ui;
+    font-weight: bold;
+    font-size: 30px;
+}
+header ul li a:hover{
+    text-decoration: underline;
+    color: #FC4100;
+}
+section{
+    background: url(https://ik.imagekit.io/tovuwazhze/homepage%20assets/back.svg?updatedAt=1726745689568);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size:cover;
+    width: 100%;
+    min-height:100vh ;
+    padding: 120px 20px 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+h2{
+    font-size: 80px;
+    color: white;
+}
+.formarea{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 15px;
+    min-height: 200px;
+    width: 80%;
+    margin: 30px 0px;
+    background-color: rgba(255, 255, 255, 0.164);
+    padding: 40px 40px 20px;
+    border-radius: 20px;
+}
+.inputbox{
+    width: 100%;
+    height: 45px;
+    border-radius: 10px;
+    padding: 10px 15px;
+    font-size: 15px;
+    outline: none;
+    border: 2px solid gray;
+}
+.inputbox:focus{
+    outline:2px solid #FC4100;
+}
+.msgbox{
+    border: 2px solid gray;
+    max-width: 100%;
+    min-width: 100%;
+    font-size: 15px;
+    padding: 10px 15px;
+    outline: none;
+    min-height: 200px;
+    border-radius: 10px;
+}
+.msgbox:focus{
+    outline:2px solid #FC4100;
+}
+button{
+    width: 100%;
+    height: 50px;
+    padding: 5px 20px;
+    border-radius: 10px;
+    outline: 0;
+    border: 0;
+    font-size: 18px; 
+    background-color: white;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 50px 0px 0px;
+    transition: 0.3s;
+}
+button:hover{
+    background-color: #FC4100;
+    color: white;   
+}
+footer{
+    width: 100%;
+    padding: 10px 20px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
+
+
+
+
+@media screen and (max-width:800px) {
+    .menubar{
+        width: 100%;
+        right: 0;
+        /* top: -100%; */
+        opacity: 0%;
+        visibility: hidden;
     }
-    function closemenu() {
-        if (menulist.style.width = "100%") {
-            menulist.style.width = "0%";
-        }
-        else {
-            menulist.style.width = "100%";
-        }
+    .menubtnbox:checked ~ .menubar{
+        right: 0;
+        top: 0;
+        visibility: visible;
+        opacity: 100%;
     }
-  
-  </script>
-</body>
-</html>
+    h2 {
+        font-size: 60px;
+    }
+}
+
+@media screen and (max-width:450px){
+    nav h1{
+        font-size: 20px;
+    }
+    h2{
+        font-size: 45px;
+    }
+    .formarea {
+        width:100% ;
+    }
+}
