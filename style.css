@@ -1,276 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 *{
-    margin: 0px;
-    padding: 0px;
-    scroll-behavior: smooth;   
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+
 }
+
 html,body{
-    overflow-x: hidden;
-    width: 100%;
-}
-nav{
-    width: 100%;
-    padding: 20px;
-    background: rgba(174, 0, 255, 0.417) ;
-    top:0;
-    left: 0;
-    display: flex;
-    align-items: center;
-    backdrop-filter: blur(8px);
-    position: absolute;
-    z-index: 1;
-    
-}
-.logo{
-    filter: invert(1);
-    width: 30px;
-    height: 30px;
-}
-nav h1{
-    color: white;
-    font-size: 24px;
-    padding-left: 10px;
-    font-family: "Poppins", sans-serif;
-}
-.menubtn{
-    position: absolute;
-    z-index: 20;
-    width: 30px;
-    height: 30px;
-    top: 20px;
-    right: 20px;
-    filter: invert(1);
-    transition: 0.3s;
-    rotate: 45deg;
-    scale: 0.7;
-}
-.menubtnbox{
-    position: absolute;
-    z-index: 21;
-    width: 30px;
-    height: 30px;
-    top: 20px;
-    right: 20px;
-    opacity: 0;
-}
-
-.menubtnbox:checked ~ .menubar{
-    right: 0;
-    visibility: visible;
-}
-.menubtnbox:checked ~ .menubtn{
-    rotate: 0deg;
-    scale: 1.1;
-}
-
-.menubar{
-    visibility: hidden;
-    position: absolute;
-    z-index: 10;
-    background: blueviolet ;
-    backdrop-filter: blur(8px);
-    list-style: none;
-    height: 100vh;
-    top: 0;
-    right: -100%;
-    padding: 100px 60px 30px;
-    width: 30%;
-    transition: 0.3s;
-
-}
-nav ul li a{
-    text-decoration: none;
-    color: white;
-    font-family: "Poppins", sans-serif;
-    font-size: 20px;   
-    position: relative;
-    z-index: 22;
-    display: flex;
-    align-items: center;
-    margin: 15px 12px;
-}
-nav ul li a::before{
-    content: "";
-    width: 8px;
-    height: 8px;
-    background-color:white;
-    display: block;
-    position: absolute;
-    z-index: 21;
-    left: 0;
-    margin-left: -15px;
-    transition: 0.2s;
-    border-radius: 10px;
-} 
-nav ul li a:hover::before{
-    width: 100%;
-    height: 100%;
-    mix-blend-mode: difference;
-    background-color: #FC4100;
-}
-.active::before{
-    width: 100%;
-    height: 100%;
-    mix-blend-mode: difference;
-    background-color: #FC4100;
-}
-
-.home{
-    width: 100%;
-    background: url(https://ik.imagekit.io/tovuwazhze/homepage%20assets/6503253.jpg?updatedAt=1721578832454);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size:cover;
-    display: flex;
-    align-items: flex-start;
-    flex-direction:column;
-    color: white;
-    padding: 200px 40px 120px;
-}
-
-.homegif{
-    width: 400px;
-    position: absolute;
-    top:140px;
-    right: 160px;
-    mix-blend-mode: screen;
-    opacity: 70%;
-}
-.home h2{
-    font-family: "Poppins", sans-serif;
-    font-size: 50px;
-    text-align: center;
-    margin-bottom: 10px;
-    padding-left:10px ;
-}
-.home p{
-    padding-left: 20px;
-    /* text-align: center; */
-    font-size: 15px;
-    font-family: "Poppins", sans-serif;
-}
-.btns{
-    display: flex;
-    margin: 40px 25px;
-}
-.btns a{
-    color: #FC4100;
-    text-decoration: none;
-    font-family: "Poppins", sans-serif;
+    scroll-behavior: smooth;
     background-color: white;
-    padding: 14px 55px;
-    font-size: 18px;
-    border-radius: 50px;
-    /* border: 2px solid white; */
-    transition: 0.3s;
 }
-.btns a:hover{
-    background-color: #FF7D29;
-    color: white;
-    scale: 1.1;
-    filter: drop-shadow(0px 0px 5px rgb(255, 123, 0));
-}
-
-
-
-
-.d1{
+header{
+    display: flex;
+    justify-content: center;
+    position: fixed;
     width: 100%;
-    background-color: #191919;
+    padding: 10px 0px 0px;
+}
+.homenav{
+    width: 98%;
+}
+header nav{
+    background: white;
+    backdrop-filter: blur(8px);
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 30px;
+    border-radius: 20px;
+    align-items: center;
+    filter: drop-shadow(0px 3px 4px rgb(59, 59, 59));
+    border:1px solid rgb(180, 180, 180);
+}
+header nav img:nth-child(1){
+    width: 30px;
+    scale: 1.2;
+    margin-left: 5px;
+}
+header nav h1{
+    font-family: "Poppins", system-ui;
+    color: black;
+}
+header ul nav{
+    padding: 50px;
+    height: 70px;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    margin-bottom: 50px;
+    border-radius: 0;
+    border: 0;
+    border-bottom: 2px solid black;
+}
+header ul{
+    background-color: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(10px);
+    height: 100vh;
+    width: 0%;
+    position: absolute;
+    top: 0;
+    overflow: hidden;
+    right: 0;
+    transition: 0.2s;
+}
+header ul nav h1{
+    color: white;
+}
+header ul nav img{
+    filter: invert(1);
+}
+header ul li{
+    margin: 10px 10px 10px 80px;
+    list-style: none;
+}
+header ul li a{
+    text-decoration: none;
+    color: white;
+    font-family: "Poppins", system-ui;
+    font-weight: bold;
+    font-size: 30px;
+}
+header ul li a:hover{
+    text-decoration: underline;
+    color: #FC4100;
+}
+.section{
+    width: 100%;
+    height: 100vh;
     display: flex;
     align-items: center;
-    
-    flex-direction: column;
-    padding: 40px;
+    justify-content: center;
+    font-size: 40px;
+    background:#232323;
+    color: white;
+    /* background-color: black; */
 }
-.d1 h3{
-    color: blueviolet;
-    font-size: 80px;
-    font-family: "Poppins", sans-serif;
-    font-weight: bolder;
-    margin: 50px 10px 0px;
-    text-align: center;
-}
-.d1 p{
-    color: #FFE8C8;
-    text-align: center;
-    font-family: "Poppins", sans-serif;
-    font-size: 35px;
-    margin: 10px 10px 80px;
-    
-}
-.infocards{
+#home{
+
+    flex-wrap: wrap;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-wrap: wrap;
+    padding: 150px 20px 80px;
+    /* background-color: black; */
+    background-image: url(https://ik.imagekit.io/tovuwazhze/homepage%20assets/back.svg?updatedAt=1726745689568);
+    background-position:bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
-.infocard{
-    width: 350px;
-    min-height: 420px;
-    margin: 20px;
-    background-color: white;
+#home img{
+    width: 500px;
+    border-radius: 20px;
+}
+.hometext{
+    /* margin:20px; */
+    min-height: 380px;
+    /* background-color: gray; */
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 50px 12px 10px;
-    border-radius: 10px;
-    
+    justify-content: center;
 }
-.infocard img{
-    margin-bottom: 10px;
-    /* opacity: 50%; */
-    width: 200px;
-
+.hometext h2{
+    font-family: "Poppins", system-ui;
+    font-size: 70px;
+    color: rgb(255, 255, 255);
 }
-.infocard h4{
-    font-size: 30px;
-    font-family: "Poppins", sans-serif;
-}
-.infocard p{
-    font-size: 18px;
-    color: #191919;
-    margin: 10px;
-}
-.infocard a{
-    color: white;
-    background-color: blueviolet;
-    text-decoration: none;
-    padding: 10px 15px;
-    border-radius: 10px;
-    margin: 10px;
-    width: 100%;
-    font-family: "Poppins", sans-serif;
+.hometext p{
+    font-size: 20px;
+    margin: 20px 50px 80px;
+    color: gray;
     text-align: center;
-    transition: 0.2s;
 }
-.infocard a:hover{
-    background-color: #FC4100;
+.hometext a{
+    font-size: 20px;
+    font-family: "Poppins", system-ui;
+    text-decoration: none;
+    color: rgb(255, 255, 255); 
+    background-color: rgb(0, 0, 0);
+
+    /* filter:drop-shadow(0px 0px 4px rgba(102, 102, 102, 0.493)); */
+    padding: 18px 30px;
+    border-radius: 20px;
+    font-weight: bold;
+    border: 2px solid rgb(49, 49, 49);
+    /* position: relative; */
+
 }
 
-.services{
+.hometext a:hover{
+    background-color: black;
+    color: white;
+    border-color: #FC4100;
+}
+.product{
+    display: none;
+}
+.product:nth-child(-n + 3){
+    display: block;
+}
+.ph2{
+    padding-top: 100px;
     width: 100%;
-    height: auto;
-    padding: 40px 50px 20px;
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+    background-color: #232323;
+    color: white;
+}
+#data-output{
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
-    justify-content:center;
-    background-color: rgb(220, 205, 233);
-}
-.services h2{
-    font-size: 60px;
-    color: #191919;
     width: 100%;
-    text-align: center;
-    font-family: "Poppins", sans-serif;
-    margin-top: 40px;
+    align-items: center;
+    justify-content: center;
+    background-color: #232323;
 }
 .card{
     width: 350px;
     height: auto;
-    background-color: rgb(31, 31, 31);
+    background-color: rgb(29, 29, 29);
     margin: 30px 10px;
     border-radius: 15px;
     transition: 0.2s;
@@ -296,11 +206,12 @@ nav ul li a:hover::before{
 .card h4{
     margin: 15px 0px 5px;
     font-size: 20px;
-    color:blueviolet;
+    color:#FC4100;
 }
 .card p{
     color:rgb(168, 168, 168);
     height: 50px;
+    
 }
 .card button{
     border: 0;
@@ -317,69 +228,55 @@ nav ul li a:hover::before{
     background-color: #FC4100;
     color: white;
 }
-.showmorebtn {
+.pf2{
     width: 100%;
+    padding: 20px 0px 40px;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 20px 0px 50px;
+    background-color: #232323;
+}
+.pf2 a{
     text-decoration: none;
-
-}
-.showmorebtn button{
-    font-family: "Poppins", sans-serif;
-    border: 0;
-    outline: 0;
-    background-color:#FF7D29;
-    font-size: 25px;
-    padding: 12px 15px;
-    font-weight: bold;
-    border-radius: 20px;
-    color: black;
+    color: rgb(255, 255, 255);
+    background-color: rgb(29, 29, 29);
+    border-radius: 15px;
+    padding: 12px 30px;
+    border: 1px solid rgba(0, 0, 0, 0);
     transition: 0.2s;
-    width: 50%;
-    margin: 20px;
 }
-.showmorebtn button:hover{
-    background-color: #FC4100;
+.pf2 a:hover{
+    background-color: black;
+    border-color: #FC4100;
 }
 .socialmedia{
     width: 100%;
-    padding: 20px;
     display: flex;
     flex-wrap: wrap;
-    background-color: #ffffff;
-    padding: 80px 40px;
+    background-color: #232323;
+    padding: 150px 40px;
     align-items: center;
     justify-content: center;
-}
-
-.socialmedia img{
-    width: 300px;
-    margin: 10px 100px 10px 150px;
-}
-.socialmedia section{
-
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin: 0px 60px;
 }
-.socialmedia section h4{
+.socialmedia h4{
     font-size: 30px;
     font-family: "Poppins", sans-serif;
-    color: blueviolet;
+    color: white;
 }
-.socialmedia section p{
+.socialmedia p{
     font-family: "Poppins", sans-serif;
     font-size: 18px;
-    color: #191919;
+    color: gray;
 }
 .socialicons{
     display: flex;
+    flex-wrap: wrap;
     margin:20px 0px;
 }
-.socialmedia section a{
+.socialmedia a{
     margin:15px;
     padding: 15px;
     border-radius: 10px;
@@ -387,198 +284,21 @@ nav ul li a:hover::before{
     align-items: center;
     justify-content: center;
     width: fit-content;
-    background-color: blueviolet;
+    background-color: black;
+    border: 1px solid rgba(0, 0, 0, 0);
+    transition: 0.2s;
 }
-.socialmedia section a:hover{
-    background-color: #FC4100;
+.socialmedia a:hover{
+    border-color: #FC4100;
 }
-.socialmedia section a svg{
+.socialmedia a svg{
     scale: 1.4;
     filter: invert(1);
 }
-
 footer{
-    
-    background-color: #191919;
     width: 100%;
-    padding: 20px;
+    padding: 10px 20px;
+    background-color: white;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-.flogo, .implink{
-    display: flex;
-    align-items: center;
-    color: white;
-    font-size: 15px;
-    font-family: "Poppins", sans-serif;
-}
-.flogo img{
-    filter: invert(1);
-    width: 20px;
-    height: 20px;
-    margin-right: 10px;
-}
-.implink a{
-    color: white;
-    text-decoration: none;
-}
-.implink a img{
-    width: 30px;
-    height: 30px;
-    filter: invert(1);
-    margin-left: 10px;
-}
-
-
-
-
-
-
-
-@media screen and (max-width:800px) {
-
-    .home{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center ;
-    }
-    .homegif{
-        position: relative;
-        top: -50px;
-        right: 0;
-        width: 200px;
-    }
-    .home h2{
-        font-size: 42px;
-    }
-    .home p {
-        padding: 0;
-        font-size: 18px;
-        text-align: center;
-    }
-    .btns a {
-        margin-top: 20px;
-        font-size:20px ;
-        padding: 12px 45px;
-    }
-    .d1 h3{
-        font-size: 50px;
-    }
-    .d1 p{
-        font-size: 20px;
-    }
-    .showmorebtn button {
-        font-size: 15px;
-        width: 90%;
-    }
-    .socialmedia img{
-        width: 200px;
-    }
-    .socialmedia{
-        flex-wrap: wrap;
-    }
-    .socialmedia img{
-        margin: 25px;
-    }
-    .socialmedia section{
-        display: flex;
-        align-items: center;
-    }
-    .menubar{
-        width: 100%;
-        right: 0;
-        /* top: -100%; */
-        opacity: 0%;
-        visibility: hidden;
-    }
-    .menubtnbox:checked ~ .menubar{
-        right: 0;
-        top: 0;
-        visibility: visible;
-        opacity: 100%;
-    }
-}
-
-@media screen and (max-width:450px){
-    nav h1{
-        font-size: 20px;
-    }
-    .homegif {
-        top: -30px;
-        width: 150px;
-    }
-    .home h2 {
-        font-size: 25px;
-    }
-    .home p{
-        font-size: 10px;
-    }
-    .home {
-        padding: 140px 40px 20px;
-    }
-    .btns a{
-        font-size: 15px;
-    }
-    .d1{
-        padding: 15px;
-    }
-    .d1 h3{
-        font-size: 30px;
-    }
-    .d1 p{
-        font-size: 12px;
-        margin-bottom: 40px;
-    } 
-    .infocard img {
-        width: 150px;
-    }
-    .infocard h4 {
-        font-size: 25px;
-    }
-    .services {
-        padding:40px 20px 20px ;
-    }
-    .services h2 {
-        margin-top: 35px;
-        font-size: 50px;
-    }
-    .showmorebtn button {
-        width: 90%;
-        font-size: 12px;
-    }
-    .showmorebtn {
-        margin-top: 0;
-    }
-    .socialmedia section a svg{
-        scale: 1.1;
-    }
-    .socialmedia section a{
-        margin: 10px;
-        padding: 12px;
-    }
-    .socialicons {
-        flex-wrap: wrap;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-    .socialmedia {
-        padding: 50px 20px;
-    }
-    .socialmedia section{
-        margin: 0 20px;
-        
-    }
-    .socialmedia section h4 {
-        font-size: 20px;
-    }
-    .socialmedia section p{
-        font-size: 12px;
-    } 
-    .socialmedia img {
-        width: 150px;
-    }
-    
+    justify-content: center;
 }
