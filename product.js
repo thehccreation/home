@@ -8,14 +8,13 @@ fetch("products.json")
 	let out = "";
 	for(let product of products){
 		out += `
-			<section class="product">
-			<div>
-				<span> <img src='${product.image}'> </span>
-				<span>${product.name}</span>
-				</div>
-				<div>
-				<a href="${product.productCode}">EXPLORE</a>
-				</div>
+			<section class="product card">
+				<a href="${product.productCode}">
+					<img src='${product.image}'>
+					<h4>${product.name}</h4>
+					<p>${product.discription}</p>
+					<button>EXPLORE</button>
+				</a>
 			</section>
 		`;
 	}
