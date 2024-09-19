@@ -1,134 +1,128 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home - THEHCCREATION</title>
+    <title>THEHCCREATION</title>
     <link rel="shortcut icon" href="https://ik.imagekit.io/tovuwazhze/homepage%20assets/hcc-favicon.jpg?updatedAt=1705154642736" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,500&family=Poppins:wght@200;400&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-	<link href="https://fonts.googleapis.com/css2?family=Bungee&display=swap" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css2?family=Bungee&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
+
 <body>
-    <nav>
-        <input type="checkbox" class="menubtnbox" name="" id="">
-        <img class="logo" src="https://ik.imagekit.io/tovuwazhze/homepage%20assets/hcc-logo-transparent.png?updatedAt=1722260211390" alt="">
-        <h1>THEHCCREATION</h1>
-        <img class="menubtn" width="96" height="96" src="https://img.icons8.com/fluency-systems-filled/96/delete-sign.png" alt="delete-sign"/>
-        <ul class="menubar">
-            <li><a href="#" class="active">HOME</a></li>
-            <li><a href="https://thehccreation.github.io/home/Space-Library.html">SPACE LIBRARY</a></li>
-            <li><a href="https://thehccreation.blogspot.com/search/label/blog">BLOG</a></li>
-            <li><a href="https://thehccreation.github.io/home/contact.html">CONTACT US</a></li>
-            <li><a href="https://thehccreation.github.io/home/about.html">ABOUT</a></li>
+    <header>
+        <nav class="homenav">
+            <img src="https://ik.imagekit.io/tovuwazhze/homepage%20assets/hcc-logo-transparent.png?updatedAt=1722260211390" alt="HCC - LOGO">
+            <h1>THEHCCREATION</h1>
+            <img width="30" height="30" src="https://img.icons8.com/ios-filled/50/menu--v6.png" onclick="openmenu()"
+                alt="menu--v6" />
+        </nav>
+        <ul id="menulist">
+            <nav>
+                <h1>THEHCCREATION</h1>
+                <img width="40" height="40" src="https://img.icons8.com/ios-filled/50/long-arrow-right.png"
+                    onclick="closemenu()" alt="long-arrow-right" />
+            </nav>
+            <li><a href="https://thehccreation.github.io/home/" id="listitems" onclick="closemenu()">HOME</a></li>
+            <li><a href="https://thehccreation.github.io/home/projects.html" id="listitems" onclick="closemenu()">PROJECTS</a></li>
+            <li><a href="https://thehccreation.blogspot.com/search/label/blog" id="listitems" onclick="closemenu()">BLOG</a></li>
+            <li><a href="https://thehccreation.github.io/home/contact.html" id="listitems" onclick="closemenu()">CONTACT</a></li>
+            <li><a href="https://thehccreation.github.io/home/about.html" id="listitems" onclick="closemenu()">ABOUT</a></li>
         </ul>
-    </nav>
-   <div class="home" id="home">
-       <img class="homegif" src="https://ik.imagekit.io/tovuwazhze/homepage%20assets/4Mg9.gif?updatedAt=1722520815024" >
-        <h2>&lt;Hello World/&gt;</h2>
-       <p>Welcome to the Space<br>One of the best Subscription free Solution to Discover useful <span id="Typing"></span></p>
-       <p>for Developers and Creators.</p>
-    <div class="btns"><a href="#services">Explore</a></div>
-       </div>
+    </header>
+    <div id="home">
+        <div class="hometext">
+            <h2>Develop What Matters</h2>
+            <p>Integrate the Power of HCC Intelligence for Seamless Productivity and Workflow.</p>
+            <a href="#projects">Get Started</a>
+            <!-- <img width="50" height="50" src="https://img.icons8.com/ios-filled/50/expand-arrow--v1.png" alt="expand-arrow--v1"/> -->
+        </div>
+        <!-- <img src="/photo-1531545514256-b1400bc00f31.jpeg" alt=""> -->
+    </div>
+    <div class="ph2" id="projects">LATEST PROJECTS</div>
+    <div id="data-output">
+    </div>
+    <div class="pf2"><a href="https://thehccreation.github.io/home/projects.html">ALL PROJECTS</a></div>
+    <div class="socialmedia">
+        <h4>Follow on Social Media</h4>
+        <p>Stay Connect with Latest Updates.</p>
+        <div class="socialicons">
+            <a href="https://facebook.com/thehccreation"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                    viewBox="0 0 24 24">
+                    <path
+                        d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm3 8h-1.35c-.538 0-.65.221-.65.778v1.222h2l-.209 2h-1.791v7h-3v-7h-2v-2h2v-2.308c0-1.769.931-2.692 3.029-2.692h1.971v3z" />
+                </svg></a>
+            <a href="https://instagram.com/thehccreation"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                    viewBox="0 0 24 24">
+                    <path
+                        d="M15.233 5.488c-.843-.038-1.097-.046-3.233-.046s-2.389.008-3.232.046c-2.17.099-3.181 1.127-3.279 3.279-.039.844-.048 1.097-.048 3.233s.009 2.389.047 3.233c.099 2.148 1.106 3.18 3.279 3.279.843.038 1.097.047 3.233.047 2.137 0 2.39-.008 3.233-.046 2.17-.099 3.18-1.129 3.279-3.279.038-.844.046-1.097.046-3.233s-.008-2.389-.046-3.232c-.099-2.153-1.111-3.182-3.279-3.281zm-3.233 10.62c-2.269 0-4.108-1.839-4.108-4.108 0-2.269 1.84-4.108 4.108-4.108s4.108 1.839 4.108 4.108c0 2.269-1.839 4.108-4.108 4.108zm4.271-7.418c-.53 0-.96-.43-.96-.96s.43-.96.96-.96.96.43.96.96-.43.96-.96.96zm-1.604 3.31c0 1.473-1.194 2.667-2.667 2.667s-2.667-1.194-2.667-2.667c0-1.473 1.194-2.667 2.667-2.667s2.667 1.194 2.667 2.667zm4.333-12h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm.952 15.298c-.132 2.909-1.751 4.521-4.653 4.654-.854.039-1.126.048-3.299.048s-2.444-.009-3.298-.048c-2.908-.133-4.52-1.748-4.654-4.654-.039-.853-.048-1.125-.048-3.298 0-2.172.009-2.445.048-3.298.134-2.908 1.748-4.521 4.654-4.653.854-.04 1.125-.049 3.298-.049s2.445.009 3.299.048c2.908.133 4.523 1.751 4.653 4.653.039.854.048 1.127.048 3.299 0 2.173-.009 2.445-.048 3.298z" />
+                </svg></a>
+            <a href="https://youtube.com/@thehccreation"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                    viewBox="0 0 24 24">
+                    <path
+                        d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z" />
+                </svg></a>
+            <a href="https://github.com/thehccreation"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                    viewBox="0 0 24 24">
+                    <path
+                        d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                </svg></a>
+            <a href="https://t.me/hcctelegram">
+                <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+                <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"><svg
+                    width="24px" height="24px" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/"
+                    style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.41421;">
+                    <path id="telegram-1"
+                        d="M18.384,22.779c0.322,0.228 0.737,0.285 1.107,0.145c0.37,-0.141 0.642,-0.457 0.724,-0.84c0.869,-4.084 2.977,-14.421 3.768,-18.136c0.06,-0.28 -0.04,-0.571 -0.26,-0.758c-0.22,-0.187 -0.525,-0.241 -0.797,-0.14c-4.193,1.552 -17.106,6.397 -22.384,8.35c-0.335,0.124 -0.553,0.446 -0.542,0.799c0.012,0.354 0.25,0.661 0.593,0.764c2.367,0.708 5.474,1.693 5.474,1.693c0,0 1.452,4.385 2.209,6.615c0.095,0.28 0.314,0.5 0.603,0.576c0.288,0.075 0.596,-0.004 0.811,-0.207c1.216,-1.148 3.096,-2.923 3.096,-2.923c0,0 3.572,2.619 5.598,4.062Zm-11.01,-8.677l1.679,5.538l0.373,-3.507c0,0 6.487,-5.851 10.185,-9.186c0.108,-0.098 0.123,-0.262 0.033,-0.377c-0.089,-0.115 -0.253,-0.142 -0.376,-0.064c-4.286,2.737 -11.894,7.596 -11.894,7.596Z" />
+                </svg>
+            </a>
+        </div>
+    </div>
+    <footer>THEHCCREATION &copy 2017 - 2024</footer>
 
-    <div class="d1">
-        <h3>About our Vision</h3>
-        <p>We Aims to Find / Create Super Productive WebApps for Creators & Developers with Zero Hassle of Sign up or Subscription.</p>
-         <div class="infocards">
-             <div class="infocard">
-                 <img src="https://ik.imagekit.io/tovuwazhze/homepage%20assets/developer.svg?updatedAt=1722511864167" alt="">
-                 <h4>DEVELOPERS</h4>
-                 <p>We provide Developers & Programmers specific resources like Library, API, CDN, Cheatsheet and many more.</p>
-                 <a href="#">EXPLORE</a>
-             </div>
-             <div class="infocard">
-                 <img src="https://ik.imagekit.io/tovuwazhze/homepage%20assets/creator.svg?updatedAt=1722511864193" alt="">
-                 <h4>CREATORS</h4>
-                 <p>We provide Creators & Designers specific resources like Fonts, Icons, Vectors, Textures and many more.</p>
-                 <a href="#">EXPLORE</a>
-             </div>
-         </div>
-     </div>
- 
-    <div class="services" id="services">
-     <h2>EXPLORE</h2>
-     <div class="card">
-         <a href="https://thehccreation.github.io/hccpixels/">
-             <img src="https://ik.imagekit.io/tovuwazhze/service%20img/hccpixels.jpg?updatedAt=1721558423309" alt="">
-             <h4>HCC PIXELS</h4>
-             <p>free stock images and wallpapers</p>
-             <button>EXPLORE</button>
-         </a>
-     </div>
-     <div class="card">
-         <a href="https://thehccreation.blogspot.com/search/label/blog">
-             <img src="https://ik.imagekit.io/tovuwazhze/service%20img/hccblog.jpg?updatedAt=1721558422986" alt="">
-             <h4>BLOGS</h4>
-             <p>Tech news and updates.</p>
-             <button>EXPLORE</button>
-         </a>
-     </div>
-     <div class="card">
-         <a href="https://www.youtube.com/@thehccreation">
-             <img src="https://ik.imagekit.io/tovuwazhze/service%20img/hcctechnical.jpg?updatedAt=1721558423185" alt="">
-             <h4>HCC TECHNICAL</h4>
-             <p>Creators and Developer resources videos.</p>
-             <button>EXPLORE</button>
-         </a>
-     </div>
-     <div class="card">
-         <a href="https://thehccreation.github.io/memixfusion/">
-             <img src="https://ik.imagekit.io/tovuwazhze/service%20img/memixfusion.jpg?updatedAt=1721558423283" alt="">
-             <h4>MEMIX FUSION</h4>
-             <p>Memes in every click.</p>
-             <button>EXPLORE</button>
-         </a>
-     </div>
-     <div class="card">
-         <a href="https://hccmodarena.blogspot.com/">
-             <img src="https://ik.imagekit.io/tovuwazhze/service%20img/hccmodarena.jpg?updatedAt=1721558423296" alt="">
-             <h4>HCC MOD ARENA</h4>
-             <p>Free alternative of apps, games and softwares.</p>
-             <button>EXPLORE</button>
-         </a>
-     </div>
-     <a href="https://thehccreation.github.io/home/Space-Library.html" class="showmorebtn"><button>EXPLORE MORE IN SPACE LIBRARY.</button></a>
- </div>
- <div class="socialmedia">
-     <img src="https://ik.imagekit.io/tovuwazhze/homepage%20assets/social%20media.svg?updatedAt=1722511864253" alt="">
-     <section>
-         <h4>Follow on Social Media</h4>
-         <p>Stay Connect with Latest Updates.</p>
-         <div class="socialicons">
-             <a href="https://facebook.com/thehccreation"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm3 8h-1.35c-.538 0-.65.221-.65.778v1.222h2l-.209 2h-1.791v7h-3v-7h-2v-2h2v-2.308c0-1.769.931-2.692 3.029-2.692h1.971v3z"/></svg></a>
-             <a href="https://instagram.com/thehccreation"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M15.233 5.488c-.843-.038-1.097-.046-3.233-.046s-2.389.008-3.232.046c-2.17.099-3.181 1.127-3.279 3.279-.039.844-.048 1.097-.048 3.233s.009 2.389.047 3.233c.099 2.148 1.106 3.18 3.279 3.279.843.038 1.097.047 3.233.047 2.137 0 2.39-.008 3.233-.046 2.17-.099 3.18-1.129 3.279-3.279.038-.844.046-1.097.046-3.233s-.008-2.389-.046-3.232c-.099-2.153-1.111-3.182-3.279-3.281zm-3.233 10.62c-2.269 0-4.108-1.839-4.108-4.108 0-2.269 1.84-4.108 4.108-4.108s4.108 1.839 4.108 4.108c0 2.269-1.839 4.108-4.108 4.108zm4.271-7.418c-.53 0-.96-.43-.96-.96s.43-.96.96-.96.96.43.96.96-.43.96-.96.96zm-1.604 3.31c0 1.473-1.194 2.667-2.667 2.667s-2.667-1.194-2.667-2.667c0-1.473 1.194-2.667 2.667-2.667s2.667 1.194 2.667 2.667zm4.333-12h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm.952 15.298c-.132 2.909-1.751 4.521-4.653 4.654-.854.039-1.126.048-3.299.048s-2.444-.009-3.298-.048c-2.908-.133-4.52-1.748-4.654-4.654-.039-.853-.048-1.125-.048-3.298 0-2.172.009-2.445.048-3.298.134-2.908 1.748-4.521 4.654-4.653.854-.04 1.125-.049 3.298-.049s2.445.009 3.299.048c2.908.133 4.523 1.751 4.653 4.653.039.854.048 1.127.048 3.299 0 2.173-.009 2.445-.048 3.298z"/></svg></a>
-             <a href="https://youtube.com/@thehccreation"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"/></svg></a>
-             <a href="https://github.com/thehccreation"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg></a>
-             <a href="https://t.me/hcctelegram"><?xml version="1.0" encoding="UTF-8" standalone="no"?><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"><svg width="24px" height="24px" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.41421;"><path id="telegram-1" d="M18.384,22.779c0.322,0.228 0.737,0.285 1.107,0.145c0.37,-0.141 0.642,-0.457 0.724,-0.84c0.869,-4.084 2.977,-14.421 3.768,-18.136c0.06,-0.28 -0.04,-0.571 -0.26,-0.758c-0.22,-0.187 -0.525,-0.241 -0.797,-0.14c-4.193,1.552 -17.106,6.397 -22.384,8.35c-0.335,0.124 -0.553,0.446 -0.542,0.799c0.012,0.354 0.25,0.661 0.593,0.764c2.367,0.708 5.474,1.693 5.474,1.693c0,0 1.452,4.385 2.209,6.615c0.095,0.28 0.314,0.5 0.603,0.576c0.288,0.075 0.596,-0.004 0.811,-0.207c1.216,-1.148 3.096,-2.923 3.096,-2.923c0,0 3.572,2.619 5.598,4.062Zm-11.01,-8.677l1.679,5.538l0.373,-3.507c0,0 6.487,-5.851 10.185,-9.186c0.108,-0.098 0.123,-0.262 0.033,-0.377c-0.089,-0.115 -0.253,-0.142 -0.376,-0.064c-4.286,2.737 -11.894,7.596 -11.894,7.596Z"/></svg></a>
-         </div>
-     </section>
- </div>
- <footer>
-     <div class="flogo"><img src="https://ik.imagekit.io/tovuwazhze/homepage%20assets/hcc-logo-transparent.png?updatedAt=1722260211390" alt="">v 3.2</div>
-     <div class="implink">
-         <a href="https://thehccreation.blogspot.com/p/feedback.html">Feedback</a>
-         <a href="#top"><img width="50" height="50" src="https://img.icons8.com/ios-filled/50/up--v1.png" alt="up--v1"/></a>
-     </div>
- </footer>
+    <script>
+        const listitems = document.getElementById('listitems');
+        const menulist = document.getElementById('menulist');
 
-   <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
-   <script>
-       var typed = new Typed('#Typing', {
-         strings: ['Tools', 'Frameworks', 'Web Apps', 'Library', 'Assets', 'Resources'],
-         typeSpeed: 80,
-         backSpeed: 40,
-         loop:true,
-       });
-     </script>
+        function openmenu() {
+            if (menulist.style.width = "0%") {
+                menulist.style.width = "100%";
+            }
+            else {
+                menulist.style.width = "0%";
+            }
+        }
+        function closemenu() {
+            if (menulist.style.width = "100%") {
+                menulist.style.width = "0%";
+            }
+            else {
+                menulist.style.width = "100%";
+            }
+        }
+
+    </script>
+    <script>
+        function search_products() {
+            let input = document.getElementById('searchbar').value
+            input = input.toLowerCase();
+            let x = document.getElementsByClassName('product');
+
+            for (i = 0; i < x.length; i++) {
+                if (!x[i].innerHTML.toLowerCase().includes(input)) {
+                    x[i].style.display = "none";
+                }
+                else {
+                    x[i].style.display = "list-item";
+                }
+            }
+        }
+    </script>
 
 </body>
-</html> 
+<script src="product.js"></script>
+</body>
+
+</html>
