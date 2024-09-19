@@ -8,24 +8,31 @@
     <link href="https://fonts.googleapis.com/css2?family=Bungee&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Bungee&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="https://ik.imagekit.io/tovuwazhze/homepage%20assets/hcc-favicon.jpg?updatedAt=1705154642736" type="image/x-icon">
-    <title>Contact Us - THEHCCREATION</title>
+    <title>Contact - THEHCCREATION</title>
 </head>
 <body>
-    <nav>
-        <input type="checkbox" class="menubtnbox" name="" id="">
-        <img class="logo" src="https://ik.imagekit.io/tovuwazhze/homepage%20assets/hcc-logo-transparent.png?updatedAt=1722260211390" alt="">
-        <h1>THEHCCREATION</h1>
-        <img class="menubtn" width="96" height="96" src="https://img.icons8.com/fluency-systems-filled/96/delete-sign.png" alt="delete-sign"/>
-        <ul class="menubar">
-            <li><a href="https://thehccreation.github.io/home">HOME</a></li>
-            <li><a href="https://thehccreation.github.io/home/Space-Library.html">SPACE LIBRARY</a></li>
-            <li><a href="https://thehccreation.blogspot.com/search/label/blog">BLOG</a></li>
-            <li><a href="#" class="active">CONTACT US</a></li>
-            <li><a href="https://thehccreation.github.io/home/about.html">ABOUT</a></li>
+    <header>
+        <nav class="homenav">
+            <img src="https://ik.imagekit.io/tovuwazhze/homepage%20assets/hcc-logo-transparent.png?updatedAt=1722260211390" alt="HCC - LOGO">
+            <h1>THEHCCREATION</h1>
+            <img width="30" height="30" src="https://img.icons8.com/ios-filled/50/menu--v6.png" onclick="openmenu()"
+                alt="menu--v6" />
+        </nav>
+        <ul id="menulist">
+            <nav>
+                <h1>THEHCCREATION</h1>
+                <img width="40" height="40" src="https://img.icons8.com/ios-filled/50/long-arrow-right.png"
+                    onclick="closemenu()" alt="long-arrow-right" />
+            </nav>
+            <li><a href="https://thehccreation.github.io/home/" id="listitems" onclick="closemenu()">HOME</a></li>
+            <li><a href="https://thehccreation.github.io/home/projects.html" id="listitems" onclick="closemenu()">PROJECTS</a></li>
+            <li><a href="https://thehccreation.blogspot.com/search/label/blog" id="listitems" onclick="closemenu()">BLOG</a></li>
+            <li><a href="https://thehccreation.github.io/home/contact.html" id="listitems" onclick="closemenu()">CONTACT</a></li>
+            <li><a href="https://thehccreation.github.io/home/about.html" id="listitems" onclick="closemenu()">ABOUT</a></li>
         </ul>
-    </nav>
+    </header>
 <section id="top">
-    <h2>Contact Us</h2>
+    <h2>CONTACT</h2>
     <form class="formarea" action="https://api.web3forms.com/submit" method="POST">
         <input type="hidden" name="access_key" value="e9626cec-5f5e-4360-9494-64fd56069508">
         <input type="text" name="name" placeholder="Name" required class="inputbox">
@@ -34,13 +41,28 @@
         <button type="submit">SUBMIT</button>
     </form>
 </section>
-<footer>
-    <div class="flogo"><img src="https://ik.imagekit.io/tovuwazhze/homepage%20assets/hcc-logo-transparent.png?updatedAt=1722260211390" alt="">v 3.2</div>
-    <div class="implink">
-        <a href="https://thehccreation.blogspot.com/p/feedback.html">Feedback</a>
-        <a href="#top"><img width="50" height="50" src="https://img.icons8.com/ios-filled/50/up--v1.png" alt="up--v1"/></a>
-    </div>
-</footer>
-
+<footer>THEHCCREATION &copy 2017 - 2024</footer>
+<script>
+    const listitems = document.getElementById('listitems');
+    const menulist = document.getElementById('menulist');
+  
+    function openmenu() {
+        if (menulist.style.width = "0%") {
+            menulist.style.width = "100%";
+        }
+        else {
+            menulist.style.width = "0%";
+        }
+    }
+    function closemenu() {
+        if (menulist.style.width = "100%") {
+            menulist.style.width = "0%";
+        }
+        else {
+            menulist.style.width = "100%";
+        }
+    }
+  
+  </script>
 </body>
 </html>
