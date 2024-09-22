@@ -160,36 +160,13 @@ section ol li{
     width: 100%;
 }
 footer{
-    background-color: #191919;
     width: 100%;
-    padding: 20px;
+    padding: 10px 20px;
+    background-color: white;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: center;
 }
-.flogo, .implink{
-    display: flex;
-    align-items: center;
-    color: white;
-    font-size: 15px;
-    font-family: "Poppins", sans-serif;
-}
-.flogo img{
-    filter: invert(1);
-    width: 20px;
-    height: 20px;
-    margin-right: 10px;
-}
-.implink a{
-    color: white;
-    text-decoration: none;
-}
-.implink a img{
-    width: 30px;
-    height: 30px;
-    filter: invert(1);
-    margin-left: 10px;
-}
+
 
 
 
