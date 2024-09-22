@@ -11,117 +11,83 @@ html,body{
    background-color: black;
     overflow-x: hidden;
 }
-nav{
-    width: 100%;
-    padding: 20px;
-    background: rgba(174, 0, 255, 0.417) ;
-    top:0;
-    left: 0;
+header{
     display: flex;
+    justify-content: center;
+    position: fixed;
+    width: 100%;
+    padding: 10px 0px 0px;
+}
+.homenav{
+    width: 98%;
+}
+header nav{
+    background: white;
+    backdrop-filter: blur(8px);
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 30px;
+    border-radius: 20px;
     align-items: center;
-    backdrop-filter: blur(8px);
-    position: absolute;
-    z-index: 1;
-    
+    filter: drop-shadow(0px 3px 4px rgb(59, 59, 59));
+    border:1px solid rgb(180, 180, 180);
 }
-.logo{
-    filter: invert(1);
+header nav img:nth-child(1){
     width: 30px;
-    height: 30px;
+    scale: 1.2;
+    margin-left: 5px;
 }
-nav h1{
+header nav h1{
+    font-family: "Poppins", system-ui;
+    color: black;
+}
+header ul nav{
+    padding: 50px;
+    height: 70px;
+    background-color: rgb(0, 0, 0);
     color: white;
-    font-size: 24px;
-    padding-left: 10px;
-    font-family: "Poppins", sans-serif;
+    margin-bottom: 50px;
+    border-radius: 0;
+    border: 0;
+    border-bottom: 2px solid black;
 }
-.menubtn{
-    position: absolute;
-    z-index: 20;
-    width: 30px;
-    height: 30px;
-    top: 20px;
-    right: 20px;
-    filter: invert(1);
-    transition: 0.3s;
-    rotate: 45deg;
-    scale: 0.7;
-}
-.menubtnbox{
-    position: absolute;
-    z-index: 21;
-    width: 30px;
-    height: 30px;
-    top: 20px;
-    right: 20px;
-    opacity: 0;
-}
-
-.menubtnbox:checked ~ .menubar{
-    right: 0;
-    visibility: visible;
-}
-.menubtnbox:checked ~ .menubtn{
-    rotate: 0deg;
-    scale: 1.1;
-}
-
-.menubar{
-    visibility: hidden;
-    position: absolute;
-    z-index: 10;
-    background: blueviolet ;
-    backdrop-filter: blur(8px);
-    list-style: none;
+header ul{
+    background-color: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(10px);
     height: 100vh;
+    width: 0%;
+    position: absolute;
     top: 0;
-    right: -100%;
-    padding: 100px 60px 30px;
-    width: 30%;
-    transition: 0.3s;
-
+    overflow: hidden;
+    right: 0;
+    transition: 0.2s;
 }
-nav ul li a{
+header ul nav h1{
+    color: white;
+}
+header ul nav img{
+    filter: invert(1);
+}
+header ul li{
+    margin: 10px 10px 10px 80px;
+    list-style: none;
+}
+header ul li a{
     text-decoration: none;
     color: white;
-    font-family: "Poppins", sans-serif;
-    font-size: 20px;   
-    position: relative;
-    z-index: 22;
-    display: flex;
-    align-items: center;
-    margin: 15px 12px;
+    font-family: "Poppins", system-ui;
+    font-weight: bold;
+    font-size: 30px;
 }
-nav ul li a::before{
-    content: "";
-    width: 8px;
-    height: 8px;
-    background-color:white;
-    display: block;
-    position: absolute;
-    z-index: 21;
-    left: 0;
-    margin-left: -15px;
-    transition: 0.2s;
-    border-radius: 10px;
-} 
-nav ul li a:hover::before{
-    width: 100%;
-    height: 100%;
-    mix-blend-mode: difference;
-    background-color: #FC4100;
-}
-.active::before{
-    width: 100%;
-    height: 100%;
-    mix-blend-mode: difference;
-    background-color: #FC4100;
+header ul li a:hover{
+    text-decoration: underline;
+    color: #FC4100;
 }
 .title{
     width: 100%;
     padding: 20px;
-    background: url(https://ik.imagekit.io/tovuwazhze/homepage%20assets/6503253.jpg?updatedAt=1721578832454);
-    background-position: center;
+    background: url(/assets/svg/layered-peaks-haikei.svg);
+    background-position:bottom;
     background-repeat: no-repeat;
     background-size:cover;
     display: flex;
@@ -139,12 +105,14 @@ section{
 }
 .backpanel{
     width: 100%;
+    /* filter: grayscale(1); */
+    /* opacity: 0.5; */
 }
 section h3{
-    /* text-align: center; */
+    text-align: center;
     margin: 30px 0px 60px;
     font-size: 50px;
-    color: blueviolet;
+    color:#FC4100;
 }
 section p{
     font-size: 30px;
