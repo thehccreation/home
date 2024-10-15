@@ -1,5 +1,11 @@
 [	
-	
+	{
+		"id": 7,
+		"image": "https://ik.imagekit.io/tovuwazhze/service%20img/poster.jpg?updatedAt=1728999661750",
+		"name": "5Hertz Digital Solutions",
+		"discription": "Development, Creative & Marketing Company",
+		"productCode": "https://5hertzdigital.shop"
+	},
 	{
 		"id": 6,
 		"image": "https://ik.imagekit.io/tovuwazhze/service%20img/20240817_140432.jpg?updatedAt=1723883853883",
