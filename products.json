@@ -1,4 +1,11 @@
 [	
+        {
+                "id": 8,
+                "image": "https://ik.imagekit.io/tovuwazhze/service%20img/20250423_130251.jpg?updatedAt=1745393961835",
+                "name": "Password Generator ",
+                "discription": "Generate strong and secure password",
+                "productCode": "https://thehccreation.githun.io/password-generator"
+        },
 	{
 		"id": 7,
 		"image": "https://ik.imagekit.io/tovuwazhze/service%20img/poster.jpg?updatedAt=1728999661750",
