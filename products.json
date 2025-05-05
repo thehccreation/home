@@ -1,4 +1,11 @@
 [	
+	{
+                "id": 9,
+                "image": "https://ik.imagekit.io/tovuwazhze/service%20img/20250505_132640.jpg?updatedAt=1746432007341",
+                "name": "QR Code Generator",
+                "discription": "Easily create QR Code for any URL for free.",
+                "productCode": "https://thehccreation.github.io/qrcode-generator/"
+}
         {
                 "id": 8,
                 "image": "https://ik.imagekit.io/tovuwazhze/service%20img/20250423_130251.jpg?updatedAt=1745393961835",
