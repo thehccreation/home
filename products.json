@@ -1,5 +1,12 @@
 [	
 	{
+                "id": 10,
+                "image": "https://ik.imagekit.io/tovuwazhze/service%20img/logo-digiassist.jpg?updatedAt=1748782242757",
+                "name": "DigiAssist",
+                "discription": "Ai ChatBot Assistant",
+                "productCode": "https://thehccreation.github.io/digiassist/"
+},
+	{
                 "id": 9,
                 "image": "https://ik.imagekit.io/tovuwazhze/service%20img/20250505_132640.jpg?updatedAt=1746432007341",
                 "name": "QR Code Generator",
