@@ -1,5 +1,12 @@
 [	
 	{
+                "id": 11,
+                "image": "https://ik.imagekit.io/tovuwazhze/service%20img/20250720_160231.jpg?updatedAt=1753011230941",
+                "name": "QuickNotes",
+                "discription": "Minimal Notes Webapp",
+                "productCode": "https://thehccreation.github.io/quicknotes/"
+},
+	{
                 "id": 10,
                 "image": "https://ik.imagekit.io/tovuwazhze/service%20img/logo-digiassist.jpg?updatedAt=1748782242757",
                 "name": "DigiAssist",
