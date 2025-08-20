@@ -37,10 +37,15 @@
 	<div class="container" id="top">
 		<h1>PROJECTS</h1>
         <input id="searchbar" onkeyup="search_products()" type="text" name="search" placeholder="Search Here...">
+        <div class="filter-container">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="beta">Beta</button>
+            <button class="filter-btn" data-filter="active">Active</button>
+            <button class="filter-btn" data-filter="closed">Closed</button>
+        </div>
 	</div>
 	<div id="data-output">
 	</div>
-  <!-- <h3 id="nothing">nothing found...</h3> -->
   <footer>THEHCCREATION &copy 2025</footer>
 	<script>
     let nothing = document.getElementById('nothing');
