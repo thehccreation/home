@@ -1,80 +1,99 @@
 [	
+{
+                "id": 12,
+                "image": "https://ik.imagekit.io/tovuwazhze/service%20img/QuickResume.png?updatedAt=1755680963680",
+                "name": "QuickResume",
+                "discription": "Instant Resume Builder",
+                "productCode": "https://thehccreation.github.io/quickresume/",
+		"status": "beta"
+			},	
 	{
-                "id": 11,
+                "id": 12,
                 "image": "https://ik.imagekit.io/tovuwazhze/service%20img/20250720_160231.jpg?updatedAt=1753011230941",
                 "name": "QuickNotes",
                 "discription": "Minimal Notes Webapp",
-                "productCode": "https://thehccreation.github.io/quicknotes/"
-},
+                "productCode": "https://thehccreation.github.io/quicknotes/",
+		"status": "active"
+			},
 	{
                 "id": 10,
                 "image": "https://ik.imagekit.io/tovuwazhze/service%20img/logo-digiassist.jpg?updatedAt=1748782242757",
                 "name": "DigiAssist",
                 "discription": "Ai ChatBot Assistant",
-                "productCode": "https://thehccreation.github.io/digiassist/"
-},
+                "productCode": "https://thehccreation.github.io/digiassist/",
+		"status": "closed"
+			},
 	{
                 "id": 9,
                 "image": "https://ik.imagekit.io/tovuwazhze/service%20img/20250505_132640.jpg?updatedAt=1746432007341",
                 "name": "QR Code Generator",
                 "discription": "Easily create QR Code for any URL for free.",
-                "productCode": "https://thehccreation.github.io/qrcode-generator/"
-},
-        {
+                "productCode": "https://thehccreation.github.io/qrcode-generator/",
+		"status": "active"
+			},
+    {
                 "id": 8,
                 "image": "https://ik.imagekit.io/tovuwazhze/service%20img/20250423_130251.jpg?updatedAt=1745393961835",
                 "name": "Password Generator ",
                 "discription": "Generate strong and secure password",
-                "productCode": "https://thehccreation.github.io/password-generator"
-},
+                "productCode": "https://thehccreation.github.io/password-generator",
+		"status": "active"
+			},
 	{
 		"id": 7,
 		"image": "https://ik.imagekit.io/tovuwazhze/service%20img/logo-5hz.jpg?updatedAt=1748782242445",
 		"name": "5Hertz Digital Solutions",
 		"discription": "Development, Creative & Marketing Company",
-		"productCode": "https://5hertzdigital.shop"
+		"productCode": "https://5hertzdigital.shop",
+		"status": "active"
 	},
 	{
 		"id": 6,
 		"image": "https://ik.imagekit.io/tovuwazhze/service%20img/20240817_140432.jpg?updatedAt=1723883853883",
 		"name": "HCC GPT",
 		"discription": "Custom AI ChatBot",
-		"productCode": "https://thehccreation.github.io/hccgpt/"
+		"productCode": "https://thehccreation.github.io/hccgpt/",
+		"status": "active"
 	},
 	{
 		"id": 1,
 		"image": "https://ik.imagekit.io/tovuwazhze/service%20img/hccblog.jpg?updatedAt=1721558422986",
 		"name": "HCC BLOG",
 		"discription":"tech and project updates",
-		"productCode": "https://thehccreation.blogspot.com/search/label/blog"
+		"productCode": "https://thehccreation.blogspot.com/search/label/blog",
+		"status": "active"
 	},
 	{
 		"id": 2,
 		"image": "https://ik.imagekit.io/tovuwazhze/service%20img/hcctechnical.jpg?updatedAt=1721558423185",
 		"name": "HCC TECHNICAL",
 		"discription":"youtube channel",
-		"productCode": "https://www.youtube.com/@thehccreation"
+		"productCode": "https://www.youtube.com/@thehccreation",
+		"status": "active"
 	},
 	{
 		"id": 3,
 		"image": "https://ik.imagekit.io/tovuwazhze/service%20img/hccpixels.jpg?updatedAt=1721558423309",
 		"name": "HCC PIXELS",
 		"discription":"stock images",
-		"productCode": "https://thehccreation.github.io/hccpixels/"
+		"productCode": "https://thehccreation.github.io/hccpixels/",
+		"status": "active"
 	},
 	{
 		"id": 4,
 		"image": "https://ik.imagekit.io/tovuwazhze/service%20img/hccmodarena.jpg?updatedAt=1721558423296",
 		"name": "HCC MOD ARENA",
 		"discription":"mod apk and software",
-		"productCode": "https://hccmodarena.blogspot.com/"
+		"productCode": "https://hccmodarena.blogspot.com/",
+		"status": "active"
 	},
 	{
 		"id": 5,
 		"image": "https://ik.imagekit.io/tovuwazhze/service%20img/memixfusion.jpg?updatedAt=1721558423283",
 		"name": "MEMIX FUSION",
 		"discription":"memes website",
-		"productCode": "https://thehccreation.github.io/memixfusion/"
+		"productCode": "https://thehccreation.github.io/memixfusion/",
+		"status": "active"
 	}
 	
 ]
