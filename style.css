@@ -228,6 +228,9 @@ header ul li a:hover{
     background-color: #FC4100;
     color: white;
 }
+sub{
+    display:none;
+}
 .pf2{
     width: 100%;
     padding: 20px 0px 40px;
@@ -302,3 +305,4 @@ footer{
     display: flex;
     justify-content: center;
 }
+
