@@ -1,6 +1,5 @@
 [
-	
-	{
+    	{
                 "id": 14,
                 "image": "https://ik.imagekit.io/tovuwazhze/service%20img/20260509_180815.jpg",
 "name": "Promptshelf",
@@ -16,7 +15,7 @@
                 "productCode": "https://velocity.thehccreation.in",
 		"status": "active"
 			},
-{
+	{
                 "id": 12,
                 "image": "https://ik.imagekit.io/tovuwazhze/service%20img/Screenshot%20(30).png?updatedAt=1762612245797",
                 "name": "QuickNotes",
@@ -45,7 +44,7 @@
 		"image": "https://ik.imagekit.io/tovuwazhze/service%20img/hccpixels.jpg?updatedAt=1721558423309",
 		"name": "HCC PIXELS 3.0",
 		"discription":"High Quality stock images",
-		"productCode": "https://thehccreation.github.io/hccpixels/",
+		"productCode": "https://hccpixels.thehccreation.in",
 		"status": "active"
 	},
 {
